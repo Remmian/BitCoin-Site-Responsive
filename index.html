@@ -24,6 +24,9 @@
 
     <!-- Call to css -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- MEDIA QUERIES -->
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 960px)">
 </head>
 
 <body>
@@ -36,102 +39,150 @@
             <h1 class="header-container__title">La próxima revolución en el intercambio de criptomonedas</h1>
             <p class="header-container__subtitle">Batatabit te ayuda a navegar entre los diferentes precios y
                 tendencias.</p>
-            <a href="#plans" class="header-container__link">Conoce Nuestros Planes<span
-                    class="header-container__icon"></span>
+            <a href="#plans" class="header-container__link">Conoce Nuestros Planes
+                <span class="header-container__icon"></span>
             </a>
         </div>
     </header>
 
     <main>
         <section class="main-exchange">
-            <!-- <div class="main-exchange__img"></div> -->
-            <figure class="main-exchange__img"></figure>
-            <div class="main-exchange-texts">
-                <h2 class="main-exchange-texts__title">
-                    Visibilizamos todas las tasas de cambio
-                </h2>
-                <p class="main-exchange-texts__subtitle">
-                    Traemos información en tiempo real de las tasas de cambio y las monedas más importantes del mundo.
-                </p>
-            </div>
+            <section>
+                <figure class="main-exchange__img"></figure>
+                <div class="main-exchange-texts">
+                    <h2 class="main-exchange-texts__title">
+                        Visibilizamos todas las tasas de cambio
+                    </h2>
+                    <p class="main-exchange-texts__subtitle">
+                        Traemos información en tiempo real de las tasas de cambio y las monedas más importantes del
+                        mundo.
+                    </p>
+                </div>
+            </section>
 
             <section class="main-exchange-table">
-
-                <!-- TABLA MONEDAS -->
-                <p class="main-exchange-table__title main-exchange-table__title--coin">
-                    Monedas
-                </p>
-
-                <i class="fa-solid fa-angle-right main-exchange-table__icon main-exchange-table__icon--coin"></i>
-
-                <div class="main-table-container">
-                    <p class="main-table-currency">Bitcoin</p>
-                    <p class="main-table-currency main-table-currency--values">
-                        <span class="main-table-currency__money">$ 1.96</span>
-                        <span class="main-table-currency__icon main-table-currency__icon--down"></span>
+                <section class="main-exchange-card">
+                    <!-- TABLA MONEDAS -->
+                    <p class="main-exchange-table__title main-exchange-table__title--coin">
+                        Monedas
                     </p>
 
-                    <p class="main-table-currency">Ethereum</p>
-                    <p class="main-table-currency main-table-currency--values">
-                        <span class="main-table-currency__money">$ 0.07</span>
-                        <span class="main-table-currency__icon main-table-currency__icon--up"></span>
+                    <div class="main-table-container">
+                        <p class="main-table-currency">Bitcoin</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money">$ 1.96</span>
+                            <span class="main-table-currency__icon main-table-currency__icon--down"></span>
+                        </p>
+
+                        <p class="main-table-currency">Ethereum</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money">$ 0.07</span>
+                            <span class="main-table-currency__icon main-table-currency__icon--up"></span>
+                        </p>
+
+                        <p class="main-table-currency">Ripple</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money">$ 2.15</span>
+                            <span class="main-table-currency__icon main-table-currency__icon--down"></span>
+                        </p>
+
+                        <p class="main-table-currency">Stellar</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money">$ 4.96</span>
+                            <span class="main-table-currency__icon main-table-currency__icon--down"></span>
+                        </p>
+                    </div>
+
+                    <p class="main-exchange-updated">
+                        <span class="main-exchange-updated__text main-exchange-updated__text--coin"> <b>Actualizado:</b>
+                            19
+                            Julio 23:45</span>
+                    </p>
+                </section>
+
+                <section class="main-exchange-card">
+                    <!-- TABLA COMISIONES -->
+                    <p class="main-exchange-table__title main-exchange-table__title--commission">
+                        Comisiones
                     </p>
 
-                    <p class="main-table-currency">Ripple</p>
-                    <p class="main-table-currency main-table-currency--values">
-                        <span class="main-table-currency__money">$ 2.15</span>
-                        <span class="main-table-currency__icon main-table-currency__icon--down"></span>
+                    <div class="main-table-container">
+                        <p class="main-table-currency">Bitrade</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money main-table-currency__money--commission">$
+                                12.96</span>
+                            <!-- <span class="main-table-currency__icon main-table-currency__icon--down"></span> -->
+                        </p>
+
+                        <p class="main-table-currency">Bitpreco</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money main-table-currency__money--commission">$
+                                13.07</span>
+                            <!-- <span class="main-table-currency__icon main-table-currency__icon--up"></span> -->
+                        </p>
+
+                        <p class="main-table-currency">Novadax</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money main-table-currency__money--commission">$
+                                13.15</span>
+                            <!-- <span class="main-table-currency__icon main-table-currency__icon--down"></span> -->
+                        </p>
+
+                        <p class="main-table-currency">Coinext</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money main-table-currency__money--commission">$
+                                14.96</span>
+                            <!-- <span class="main-table-currency__icon main-table-currency__icon--down"></span> -->
+                        </p>
+                    </div>
+
+                    <p class="main-exchange-updated">
+                        <span class="main-exchange-updated__text main-exchange-updated__text--commission">
+                            <b>Actualizado:</b> 19 Julio 23:45</span>
+                    </p>
+                </section>
+
+                <section class="main-exchange-card">
+                    <!-- TABLA COMISIONES -->
+                    <p class="main-exchange-table__title main-exchange-table__title--commission">
+                        Comisiones
                     </p>
 
-                    <p class="main-table-currency">Stellar</p>
-                    <p class="main-table-currency main-table-currency--values">
-                        <span class="main-table-currency__money">$ 4.96</span>
-                        <span class="main-table-currency__icon main-table-currency__icon--down"></span>
+                    <div class="main-table-container">
+                        <p class="main-table-currency">Bitrade</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money main-table-currency__money--commission">$
+                                12.96</span>
+                            <!-- <span class="main-table-currency__icon main-table-currency__icon--down"></span> -->
+                        </p>
+
+                        <p class="main-table-currency">Bitpreco</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money main-table-currency__money--commission">$
+                                13.07</span>
+                            <!-- <span class="main-table-currency__icon main-table-currency__icon--up"></span> -->
+                        </p>
+
+                        <p class="main-table-currency">Novadax</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money main-table-currency__money--commission">$
+                                13.15</span>
+                            <!-- <span class="main-table-currency__icon main-table-currency__icon--down"></span> -->
+                        </p>
+
+                        <p class="main-table-currency">Coinext</p>
+                        <p class="main-table-currency main-table-currency--values">
+                            <span class="main-table-currency__money main-table-currency__money--commission">$
+                                14.96</span>
+                            <!-- <span class="main-table-currency__icon main-table-currency__icon--down"></span> -->
+                        </p>
+                    </div>
+
+                    <p class="main-exchange-updated">
+                        <span class="main-exchange-updated__text main-exchange-updated__text--commission">
+                            <b>Actualizado:</b> 19 Julio 23:45</span>
                     </p>
-                </div>
-
-                <p class="main-exchange-updated">
-                    <span class="main-exchange-updated__text main-exchange-updated__text--coin"> <b>Actualizado:</b> 19
-                        Julio 23:45</span>
-                </p>
-
-                <!-- TABLA COMISIONES -->
-                <p class="main-exchange-table__title main-exchange-table__title--commission">
-                    Comisiones
-                </p>
-
-                <i class="fa-solid fa-angle-left main-exchange-table__icon main-exchange-table__icon--commission"></i>
-
-                <div class="main-table-container">
-                    <p class="main-table-currency">Bitrade</p>
-                    <p class="main-table-currency main-table-currency--values">
-                        <span class="main-table-currency__money main-table-currency__money--commission">$ 12.96</span>
-                        <!-- <span class="main-table-currency__icon main-table-currency__icon--down"></span> -->
-                    </p>
-
-                    <p class="main-table-currency">Bitpreco</p>
-                    <p class="main-table-currency main-table-currency--values">
-                        <span class="main-table-currency__money main-table-currency__money--commission">$ 13.07</span>
-                        <!-- <span class="main-table-currency__icon main-table-currency__icon--up"></span> -->
-                    </p>
-
-                    <p class="main-table-currency">Novadax</p>
-                    <p class="main-table-currency main-table-currency--values">
-                        <span class="main-table-currency__money main-table-currency__money--commission">$ 13.15</span>
-                        <!-- <span class="main-table-currency__icon main-table-currency__icon--down"></span> -->
-                    </p>
-
-                    <p class="main-table-currency">Coinext</p>
-                    <p class="main-table-currency main-table-currency--values">
-                        <span class="main-table-currency__money main-table-currency__money--commission">$ 14.96</span>
-                        <!-- <span class="main-table-currency__icon main-table-currency__icon--down"></span> -->
-                    </p>
-                </div>
-
-                <p class="main-exchange-updated">
-                    <span class="main-exchange-updated__text main-exchange-updated__text--commission">
-                        <b>Actualizado:</b> 19 Julio 23:45</span>
-                </p>
+                </section>
             </section>
         </section>
 

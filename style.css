@@ -197,7 +197,20 @@ main {
 }
 
 .main-exchange-table {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 30px;
+    scrollbar-width: none;
+    /* Para que no aparezca el scroll */
+
     width: 100%;
+    padding: 0 20px;
+}
+
+.main-exchange-card {
+    scroll-snap-align: center;
 }
 
 .main-exchange-table__title {
@@ -221,28 +234,14 @@ main {
     color: var(--secondary-color);
 }
 
-.main-exchange-table__icon {
-    position: relative;
-    bottom: -92px;
-
-    width: 14px;
-    height: 14px;
-}
-
-.main-exchange-table__icon--coin {
-    left: 35.79%;
-}
-
-.main-exchange-table__icon--commission {
-    right: 35.79%;
-}
-
 .main-table-container {
     display: grid;
     grid-template-columns: auto auto;
     position: relative;
 
-    width: 197px;
+    width: 90%;
+    min-width: 288px;
+    max-width: 300px;
     margin: 0 auto;
 
     border-radius: 8px;
@@ -252,6 +251,7 @@ main {
 .main-table-currency {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 
     padding: 10px 12px;
@@ -267,15 +267,22 @@ main {
 }
 
 .main-table-currency--values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-weight: 400;
     font-size: 1.4rem;
 
     color: #757575;
 }
 
-.main-table-currency__money--commission {
+/* .main-table-currency__money,
+.main-table-currency__icon {
     margin: 0 auto;
 }
+
+.main-table-currency__money--commission {} */
 
 .main-table-currency__icon {
     margin-left: 10px;
@@ -441,7 +448,7 @@ main {
 
     width: 100%;
     min-width: 320px;
-    max-width: 600px;
+    /* max-width: 600px; */
     height: 60vh;
     margin: 0 auto;
 
@@ -501,7 +508,7 @@ main {
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    gap: 20px;
+    gap: 30px;
     scrollbar-width: none;
     /* Para que no aparezca el scroll */
 
@@ -516,9 +523,8 @@ main {
     min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 20px auto;
-    margin-bottom: 60px;
-    padding: 0 15px;
+    margin: 20px 0 60px 0;
+    /* margin-bottom: 60px; */
 
     background-color: var(--light-color);
     border-radius: 15px;
@@ -571,8 +577,6 @@ main {
 }
 
 .plans-card-body__price {
-    /* position: relative; */
-
     padding: 5px 0;
 
     font-family: 'Inter', sans-serif;
@@ -584,9 +588,6 @@ main {
 }
 
 .plans-card-body__dollar {
-    /* position: absolute;
-    top: -12px;
-    left: calc(50% - 45px); */
     vertical-align: 29px;
 
     font-size: 1.2rem;
